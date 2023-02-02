@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    height: 150px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+.clock {
+    display: flex;
+    font-size: 24px;
+    gap: 10px;
+}
+
+.controls button {
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: beige;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
